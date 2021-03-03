@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boodschappenlijst</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <h1>Boodschappenlijst</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Prijs</th>
+          <th>Aantal</th>
+          <th>Subtotaal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brood</td>
+          <td class="productPrice">1.00</td>
+          <td>
+            <input
+              type="number"
+              name="AantalBrood"
+              id="AantalBrood"
+              class="productQuantity"
+              min="0"
+            />
+          </td>
+          <td class="productTotalCost">0</td>
+        </tr>
+
+        <tr>
+          <td>Broccoli</td>
+          <td class="productPrice">0.99</td>
+          <td>
+            <input
+              type="number"
+              name="AantalBroccoli"
+              id="AantalBroccoli"
+              class="productQuantity"
+              min="0"
+            />
+          </td>
+          <td class="productTotalCost">0</td>
+        </tr>
+
+        <tr>
+          <td>Krentenbollen</td>
+          <td class="productPrice">1.20</td>
+          <td>
+            <input
+              type="number"
+              name="AantalKrentenBollen"
+              id="AantalKrentenBollen"
+              class="productQuantity"
+              min="0"
+            />
+          </td>
+          <td class="productTotalCost">0</td>
+        </tr>
+
+        <tr>
+          <td>Noten</td>
+          <td class="productPrice">2.99</td>
+          <td>
+            <input
+              type="number"
+              name="AantalNoten"
+              id="AantalNoten"
+              class="productQuantity"
+              min="0"
+            />
+          </td>
+          <td class="productTotalCost">0</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" id="totaalLabel">Totaal</td>
+          <td class="totalCost">0</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
